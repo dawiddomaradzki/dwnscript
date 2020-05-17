@@ -1,0 +1,27 @@
+@import "_normalize";
+@import "_variables";
+
+
+html {
+  box-sizing: border-box;
+  max-height: 100vh;
+  padding: 16px;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: $yellow;
+  background: $violet;
+}
+
+.repositories {
+  display: grid;
+  grid-template-columns: repeat(auto, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  justify-content: center;
+  align-items: center;
+}
